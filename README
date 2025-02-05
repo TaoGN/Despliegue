@@ -1,0 +1,18 @@
+## Requisitos previos
+Tener instalado Docker, Docker Compose y Git.
+
+## Pasos para iniciar el proyecto
+
+## Clona el repositorio o descomprime el proyecto:
+git clone https://github.com/TaoGN/Despliegue.git
+cd proyecto_laravel
+
+## Configura el entorno:
+Copia el contenido del archivo .env example en el archivo .env y ajusta las variables si es necesario.
+El APP_KEY está vacío, para generarlo ejecuta el comando php artisan key:generate
+
+## Levanta los servicios con Docker:
+docker compose up --build
+
+## Accede a la aplicación en el navegador:
+Laravel estará disponible en http://localhost
